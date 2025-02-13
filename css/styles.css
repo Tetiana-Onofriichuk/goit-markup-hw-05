@@ -454,10 +454,130 @@ transform: translateY(0);
 }
 
 /* ------------section 4 end------------ */
+
+/* --------modal-overlay */
+.modal-overlay{
+   position: fixed; 
+   width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: 999;
+    background-color: rgba(46, 47, 66, 0.4);   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* opacity: 0;
+    pointer-events: none;
+    transition: opacity 250ms easy-in-out;
+     */
+
+}
+
+.modal-overlay.is-open{
+/* opacity: 1;
+    pointer-events: auto; */
+}
+
+.modal{
+border-radius: 4px;
+    width: 408px;
+    height: 584px;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 2px 1px 0 rgba(0, 0, 0, 0.2);
+    background: #fcfcfc;
+    padding: 72px 24px 24px 24px;
+    position: relative;
+}
+
+
+.text-modal{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 16px;
+}
+.form{
+    display: flex;
+    flex-direction: column; 
+    gap:8px;
+
+}
+.form-label{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    line-height: 1.16;
+        letter-spacing: 0.04em;
+        color: #8e8f99;
+}
+.form-input{
+    border: 1px solid rgba(46, 47, 66, 0.4);
+        border-radius: 4px;
+        width: 360px;
+        height: 40px;
+}
+.form-input-text{
+    border: 1px solid rgba(46, 47, 66, 0.4);
+        border-radius: 4px;
+        max-width: 360px;
+        max-height: 120px;
+        resize: none;
+}
+.form-input-text::placeholder{
+    font-weight: 400;
+        font-size: 12px;
+        line-height: 1.16;
+        letter-spacing: 0.04em;
+        color: rgba(46, 47, 66, 0.4);
+    }
+.checkbox-container{
+    display: flex;
+    gap: 8px;
+    margin-top: 16px;
+}
+
+
+.checkbox-container-text{
+    font-weight: 400;
+        font-size: 12px;
+        line-height: 1.16;
+        letter-spacing: 0.04em;
+        color: #8e8f99;
+}
+.policy{
+    
+        line-height: 1.33;
+        text-decoration: underline;
+        color: #4d5ae5;
+}
+.form-button{
+    border-radius: 4px;
+        padding: 16px 32px;
+        width: 169px;
+        height: 56px;
+        margin: 24px auto 0;
+        box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+        background: #4d5ae5;
+        line-height: 1.5;
+        letter-spacing: 0.04em;
+        text-align: center;
+        color: #fff;
+}
+
+.form-button:hover {
+    background-color: #404BBF;
+}
+
+.form-button:focus {
+    background-color: #404BBF;
+}
+
+/* -----footer-------- */
 .footer-own {
     background-color: #2e2f42;
     height: 312px;
     padding: 100px 0;
+
 
 }
 
