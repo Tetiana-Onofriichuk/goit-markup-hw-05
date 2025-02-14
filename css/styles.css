@@ -606,7 +606,7 @@ border-radius: 4px;
 display: flex;
 justify-content: center;
 align-items: center;
-gap: 16px;
+
 
 }
 .form-button:hover {
@@ -746,6 +746,7 @@ border-color:#4d5ae5;
 
 .form-textarea{
     margin-bottom: 16px;
+    display: block;
 }
 .form-input-area {
     font-weight: 400;
